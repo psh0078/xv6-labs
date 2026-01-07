@@ -1,0 +1,21 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-DSOL_UTIL",
+      "-DLAB_UTIL",
+      "-DSOL_UTIL",
+      "-DLAB_UTIL",
+      "-Werror",
+      "-Wall",
+      "-I.",
+      "-o",
+      "mkfs/mkfs",
+      "mkfs/mkfs.c"
+    ],
+    "directory": "/Users/kafka/dev/os/xv6-labs-2025",
+    "file": "/Users/kafka/dev/os/xv6-labs-2025/mkfs/mkfs.c",
+    "output": "/Users/kafka/dev/os/xv6-labs-2025/mkfs/mkfs"
+  }
+]
