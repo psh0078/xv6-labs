@@ -1,13 +1,21 @@
 #include "kernel/types.h"
 #include "user/user.h"
 
-void sleep(int tick) {
-
-}
-
-int main(int argc, char *argv[]) {
-  if (argc < 1) {
-    fprintf(2, "sleep: no argument passed. please pass an argument.");
+int
+main(int argc, char *argv[])
+{
+  if(argc < 2){
+    fprintf(2, "Usage: sleep seconds\\n");
+    exit(0);
   }
+
+  int ticks = atoi(argv[1]);
+  if (ticks > 0) {
+    pause(ticks); // This calls the kernel's sys_sleep
+  } else {
+    fprintf(2, "Invalid interval %s\\n", argv[1]);
+  }
+
+  exit(0);
 }
 
