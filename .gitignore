@@ -27,4 +27,4 @@ barrier
 *.dSYM
 *.pcap
 TAGS
-
+.cache
